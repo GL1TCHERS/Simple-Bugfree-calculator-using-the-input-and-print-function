@@ -29,7 +29,7 @@ while True:
         print("This is not a number, choose a valid number!")
         time.sleep(2)
 time.sleep(2)
-allowedlist = ["addition", "subtraction", "multiplication", "division","Addition", "Subtraction", "Multiplication", "Division"]
+allowedlist = ["addition", "subtraction", "multiplication", "division","Addition", "Subtraction", "Multiplication", "Division", "+", "-", "*", "/"]
 while True:
     option = input("How to you wanna make the calculation? (Addition, Subtraction, Multiplication, Division)")
     if option in allowedlist:
@@ -41,11 +41,11 @@ while True:
 time.sleep(2)
 print("Result:")
 time.sleep(3)
-if option == "addition" or option == "Addition":
+if option == "addition" or option == "Addition" or option == "+":
     print(number1 + number2)
-if option == "subtraction" or option == "Subtraction":
+if option == "subtraction" or option == "Subtraction" or option == "-":
     print(number1 - number2)
-if option == "multiplication" or option == "Multiplication":
+if option == "multiplication" or option == "Multiplication" or option == "*":
     print(number1 * number2)
-if option == "division" or option == "Division":
+if option == "division" or option == "Division" or option == "/":
     print(number1 / number2)
